@@ -1,3 +1,4 @@
+/* fonte personalizada */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
@@ -40,15 +41,18 @@ header {
     /* Ajuste a distância do canto */
 }
 
-/* ====== Menu ====== */
+/*    Menu    */
 .menu-header {
-    
     display: flex;
     text-decoration: none;
     flex: 2;
 }
 
-.menu-header a {
+.menu-header li{
+    display: block;
+    text-decoration: none;
+}
+.menu-header a {  /* Os botão */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -58,7 +62,7 @@ header {
 }
 
 .menu-header a:hover {
-    background-color: #05558d;  /* Ou a cor que você preferir */
+    background-color: #05558d;  /* Mudar a cor na hora do Hover */
 }
 
 .menu-header button:hover {
@@ -69,39 +73,24 @@ header {
     border-radius: 5px;
 }
 
-/* Dropdown */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 180px;
-    padding: 5px 0;
-    z-index: 1000;
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #072f54;
-    transition: background 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-    background-color: #072f54;
-    color: white;
-}
-
 /* Faixa decorativa */
 .faixa-decorativa {
-    height: 40px;
+    height: 10px;
     background-color: #072f54;
     width: 100%;
 }
 
-/* ====== Banner ====== */
+.faixa-decorativa2 {
+    height: 150px;
+    width: 100%;
+}
+
+.faixa-decorativa3 {
+    height: 50px;
+    width: 100%;
+}
+
+/*    Banner    */
 .banner-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,10 +101,14 @@ header {
 }
 
 .banner-image img {
-    width: 50vw;
+    width: 900px;
+    height: 600px;
     border: 1px solid #ccc;
+    border-radius: 10%;
 }
-
+.usuario{
+    padding: 8px;
+}
 .banner-text {
     color: #333;
     font-size: 16px;
@@ -133,7 +126,7 @@ header {
     line-height: 1.5;
 }
 
-/* ====== Seção de Cursos ====== */
+/*    Seção de Cursos    */
 .cursos-container {
     display: flex;
     justify-content: space-between;
@@ -145,7 +138,7 @@ header {
     background-color: #D9D9D9;
     padding: 15px;
     width: 250px;
-    height: 400px;
+    height: 580px;
     border-radius: 20px;
     text-align: left;
     display: flex;
@@ -180,7 +173,7 @@ header {
     margin: 10px 0;
 }
 
-/* ====== Seção de Contato ====== */
+/*    Seção de Contato    */
 .contato-container {
     display: flex;
     justify-content: space-between;
@@ -246,7 +239,7 @@ header {
     border-radius: 10px;
 }
 
-/* ====== Rodapé ====== */
+/*    Rodapé    */
 .rodape {
     display: flex;
     justify-content: space-around;
@@ -274,7 +267,7 @@ header {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .rodape ul li a:hover {
